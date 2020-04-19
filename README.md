@@ -81,17 +81,17 @@ Raycasting Direction: VOXELISATION.m is set to use raycasting in all three carte
 The real size parameters for the 3D array encompassing the object is assumed to have a 1 to 1 size correlation with the grid parameters (1 pixel = 1 mm).
 
 #### Detector panel pixel density and real size 
-To simulate a real detector, 256x256 pixels was selected as the pixel resolution, and calculated the approximate real size dimensions of the detector in order to achieve 300 PPI2, as 375x375 mm:
-((256^{2}  pixels^{2}))/(((375 mm))/((25.4 mm/inch) ))^{2} = ~300 PPI^{2}
+To simulate a real detector, 256x256 pixels was selected as the pixel resolution, and calculated the approximate real size dimensions of the detector in order to achieve 300 PPI2, as 375x375 mm:.
 
 #### Distance of X-ray source to Detector
 The distance of the x-ray source to the detector was kept constant at 1000 mm for this implementation, in order to simplify object distance calculations.
 
 #### Distance of X-ray source to Object
 This parameter is normally automatically computed in order to make sure the projection fits on the 2D detector properly, with no image cut-off. In other words, the distance is computed to make sure the 3D object array fits in the ‘observation cone’ the conical ray makes. This idea is demonstrated by Figure 2. With earlier parameters set, the calculation depends on the size of the z-direction 3D object array and is as follows:
-tan(θ)=  ((DD/2))/D_D 
-Radius= √((Dx/2)^2+(Dy/2)^2 )
-D_O=Radius/(tan⁡(θ))+Dz/2
+
+* tan(θ)=  ((DD/2))/D_D 
+* Radius= √((Dx/2)^2+(Dy/2)^2 )
+* D_O=Radius/(tan⁡(θ))+Dz/2
 
 Where, DD represents the detector dimension 375 mm, Dx,y,z represents the dimensions of the 3D object array, DD is the distance to the detector (along the z-axis) and DO is the calculated distance to the object. This equation ensures that the proximal 3D array face to the x-ray source will always fit within the conic rays (by adjusting for half of the z-size of the array). Additionally, DO can also be set manually in the XraySim.m function, in order to observe the change in 2D projection due to changing source-object distance. However, it is no longer guaranteed for the object to be fully in the x-ray cone-beam, and 2D projection cutoff may occur.
 ```
@@ -134,19 +134,19 @@ Using the variables in Figure 1, the 3D position of a known point can be used to
 	* Let θy represent the (y,z) plane ray angle
 
 1. First compute the (x,z) and (y,z) plane angles:
-tan⁡(θ_x )=  x/((Z_DSO+z) )           (1)
-tan⁡(θ_y )=  y/((Z_DSO+z) )           (2)
+* tan⁡(θ_x )=  x/((Z_DSO+z) )           (1)
+* tan⁡(θ_y )=  y/((Z_DSO+z) )           (2)
 2. The same angles, are related to the projected 2D points by the next equations:
-tan⁡〖(θ_x )=Xd/Z_DSD 〗                        (3)
-tan⁡(θ_y )=  Yd/Z_DSD                       (4)
+* tan⁡(θ_x )=Xd/Z_DSD                   (3)
+* tan⁡(θ_y )=  Yd/Z_DSD                 (4)
 3. Sub equations (1) and (2) into (3) and (4) respectively, and solve for Xd and Yd respectively.
-x/((Z_DSO+z) )=  Xd/Z_DSD                 (5)
+* x/((Z_DSO+z) )=  Xd/Z_DSD            (5)
 
-Xd=x*  Z_DSD/((Z_DSO+z) )            (6)
+* Xd=x*  Z_DSD/((Z_DSO+z) )            (6)
 
-y/((Z_DSO+z) )=  Yd/Z_DSD                (7)
+* y/((Z_DSO+z) )=  Yd/Z_DSD            (7)
 
-Yd=y*  Z_DSD/((Z_DSO+z) )            (8)
+* Yd=y*  Z_DSD/((Z_DSO+z) )            (8)
 
 This solution demonstrates that the (x,y,z) point is projected onto the 2D plane by use of the factor Z_DSD/((Z_DSO+z) ) which is the ratio between the source-detector source-object distance. This factor is adjusted by which z-slice the projection algorithm is in (the z value) which causes the further slices (larger z) to result in smaller projections.
 
@@ -187,17 +187,6 @@ Kyungsang Kim https://www.mathworks.com/matlabcentral/fileexchange/35548-3d-cone
 Michael Behr – ReadMe + MATLAB coding + Testing Protocol
 	Contact    - MichaelBehr13@gmail.com
 Insitution - Toronto Rehabilitation Institute, University Health Network
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## 8. Figures
