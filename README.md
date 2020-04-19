@@ -67,7 +67,7 @@ STL files can be in either the ascii or binary file formats. The main assumption
 
 ### Simulation Setup
 
-This implementation assumes the object is being imaged from x-rays in the z-direction. The setup has the center (x,y,z = 0,0,z) of the source, object, and detector plate all aligned along the Z-axis. The centre of the object is considered the origin (0,0,0). The x-rays can be visualized as if they are coming from a source above the object, projecting x-rays upon a 2D X-Y detector array beneath it. Visualizing further, the x-rays could be taken during total hip replacement surgery, where the hip joint lies over the x-y detector. Figure 1 at the end of the ReadMe gives a representation of the setup.
+This implementation assumes the object is being imaged from x-rays in the z-direction. The setup has the center (x,y,z = 0,0,z) of the source, object, and detector plate all aligned along the Z-axis. The centre of the object is considered the origin (0,0,0). The x-rays can be visualized as if they are coming from a source above the object, projecting x-rays upon a 2D X-Y detector array beneath it. Visualizing further, the x-rays could be taken during total hip replacement surgery, where the hip joint lies over the x-y detector. *Figure 1* at the end of the ReadMe gives a representation of the setup.
 
 ### Parameters
 
@@ -87,9 +87,9 @@ To simulate a real detector, 256x256 pixels was selected as the pixel resolution
 The distance of the x-ray source to the detector was kept constant at 1000 mm for this implementation, in order to simplify object distance calculations.
 
 #### Distance of X-ray source to Object
-This parameter is normally automatically computed in order to make sure the projection fits on the 2D detector properly, with no image cut-off. In other words, the distance is computed to make sure the 3D object array fits in the ‘observation cone’ the conical ray makes. This idea is demonstrated by Figure 2. With earlier parameters set, the calculation depends on the size of the z-direction 3D object array and is as follows:
+This parameter is normally automatically computed in order to make sure the projection fits on the 2D detector properly, with no image cut-off. In other words, the distance is computed to make sure the 3D object array fits in the ‘observation cone’ the conical ray makes. This idea is demonstrated by *Figure 2*. With earlier parameters set, the calculation depends on the size of the z-direction 3D object array and is as follows:
 
-* tan(θ)=  ((DD/2))/D_D 
+* <a href="https://www.codecogs.com/eqnedit.php?latex=tan(\Theta&space;)=(\frac{(DD)}{2*D_{d}})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?tan(\Theta&space;)=(\frac{(DD)}{2*D_{d}})" title="tan(\Theta )=(\frac{(DD)}{2*D_{d}})" /></a>
 * Radius= √((Dx/2)^2+(Dy/2)^2 )
 * D_O=Radius/(tan⁡(θ))+Dz/2
 
