@@ -82,7 +82,7 @@ The real size parameters for the 3D array encompassing the object is assumed to 
 
 #### Detector panel pixel density and real size 
 To simulate a real detector, 256x256 pixels was selected as the pixel resolution, and calculated the approximate real size dimensions of the detector in order to achieve 300 PPI2, as 375x375 mm:
-((〖256〗^2  〖pixels〗^2))/(((375 mm))/((25.4 mm/inch) ))^2 = ~300 〖PPI〗^2
+((256^{2}  pixels^{2}))/(((375 mm))/((25.4 mm/inch) ))^{2} = ~300 PPI^{2}
 
 #### Distance of X-ray source to Detector
 The distance of the x-ray source to the detector was kept constant at 1000 mm for this implementation, in order to simplify object distance calculations.
