@@ -183,10 +183,12 @@ Patil S and Ravi B.  Voxel-based representation, display and thickness analysis 
 3. projection2D.m is adapted using code from projection.m, XraySim.m has code adapted from ParamSetting.m. Both are from the 3D Cone beam CT (CBCT) projection backprojection FDK, iterative reconstruction toolbox by: 
 Kyungsang Kim https://www.mathworks.com/matlabcentral/fileexchange/35548-3d-cone-beam-ct-cbct-projection-backprojection-fdk-iterative-reconstruction-matlab-examples
 
-## 7. Authors
+## 7. Author
 * Michael Behr – ReadMe + MATLAB coding + Testing Protocol
-** Contact    - MichaelBehr13@gmail.com
-** Insitution - University of Waterloo (Current), Toronto Rehabilitation Institute (OLD)
+
+Contact    - MichaelBehr13@gmail.com
+
+Insitution - University of Waterloo (Current), Toronto Rehabilitation Institute (OLD)
 
 
 ## 8. Figures
