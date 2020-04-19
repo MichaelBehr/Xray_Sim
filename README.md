@@ -152,7 +152,7 @@ This solution demonstrates that the (x,y,z) point is projected onto the 2D plane
 
 The inverse of this factor is applied to the geometric re-sampling meshes before using them to interpolate the 2D projection in the function projection2D.m. The inverse of the factor is applied because the relationship between x and ZDSD is not linear (required for linear interpolation). However, x is linearly related to  1/Z_DSD , which is why we apply the inverse of the function before linearly interpolating. Further explanation for why the inverse of the factor is applied is explained by page 4 of the article:
 
-*Perspective Texture Mapping Part 1: Foundations by Chris Hecker
+*Perspective Texture Mapping Part 1: Foundations by Chris Hecker*
 
 A pdf of this article can be found in the Appendix folder of the package. For a more in depth read on the topic of perspective projection refer to the following link: 
 https://en.wikipedia.org/wiki/3D_projection#Perspective_projection
