@@ -200,4 +200,5 @@ Figure 2: The object should fit within the field of view in order to have its pr
 
 ![Figure_3a](https://user-images.githubusercontent.com/56969254/79782325-e13dee80-830c-11ea-9e12-178456c4c3e5.png)
 ![Figure_3b](https://user-images.githubusercontent.com/56969254/79782344-ea2ec000-830c-11ea-8720-d4fd65ba674c.png)
+
 Figure 3: A)Parallel X-ray implementation vs B) Cone-beam implementation. Notice the perspective distortion in the 2nd image. 
