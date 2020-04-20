@@ -195,9 +195,9 @@ Kyungsang Kim https://www.mathworks.com/matlabcentral/fileexchange/35548-3d-cone
 
 Figure 1: Cone-beam implementation demonstrating the simulation setup. The object isocenter is considered the origin for mathematical calculations. This figure is adapted from the Cone-beam toolbox by Kyungsang Kim.
 
- 
+![Figure_2](https://user-images.githubusercontent.com/56969254/79782245-c5d2e380-830c-11ea-8b26-b91d1481ef36.png)
 Figure 2: The object should fit within the field of view in order to have its projection not cutoff on the detector. This figure is adapted from the Cone-beam toolbox by Kyungsang Kim.
 
-  
-
-Figure 3: Parallel X-ray implementation vs Cone-beam implementation. Notice the perspective distortion in the 2nd image due 
+![Figure_3a](https://user-images.githubusercontent.com/56969254/79782325-e13dee80-830c-11ea-9e12-178456c4c3e5.png)
+![Figure_3b](https://user-images.githubusercontent.com/56969254/79782344-ea2ec000-830c-11ea-8720-d4fd65ba674c.png)
+Figure 3: A)Parallel X-ray implementation vs B) Cone-beam implementation. Notice the perspective distortion in the 2nd image. 
