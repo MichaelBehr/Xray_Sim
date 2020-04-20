@@ -191,7 +191,8 @@ Kyungsang Kim https://www.mathworks.com/matlabcentral/fileexchange/35548-3d-cone
 
 
 ## 8. Figures
- 
+![alt text](https://github.com/MichaelBehr/Xray_Sim/Figure_1.png)
+
 Figure 1: Cone-beam implementation demonstrating the simulation setup. The object isocenter is considered the origin for mathematical calculations. This figure is adapted from the Cone-beam toolbox by Kyungsang Kim.
 
  
