@@ -3,6 +3,7 @@
 This package performs simulated, 2 dimensional (2D) x-ray projections on 3 dimensional objects (3D), described in stereolithography format (STL) utilizing MATLAB. Cone-beam geometry was chosen as the x-ray model due to the utility advantages it has over parallel and fan beam x-ray geometry (simplest real world scenario, does not require collimater in order to parallelize beams, less equipment etc.). 
 
 ## 1. Getting Started
+
 Add the folder X-ray Simulation to your MATLAB path. Inside the folder you will find the main function, XraySim.m, along with several other functions that are necessary to run the simulations. References for used packages are at the end of this document.
 Make sure the STL file you are planning on simulation x-ray projections from is in the same folder as the main function XraySim.m, along with the functions: READ_stl.m, VOXELISE.m, and projection2D.m.
 
